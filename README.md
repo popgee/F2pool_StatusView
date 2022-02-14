@@ -17,5 +17,5 @@
         └─index.html
 ```
 4. 进入到`F2Pool_StatusView`目录下，执行`go build`进行编译
-5. 执行`./f2status`来运行生成的文件
+5. 执行`./f2status`来运行生成的文件。建议使用screen命令将程序放在后台运行
 6. 浏览器输入`http://服务器ip:8000`来访问网页
