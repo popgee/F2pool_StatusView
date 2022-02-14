@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>F2-Status</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
+</head>
+<body>
+<div>
+    <p>🐟额：<a id="balance">正在获取数据...</a></p>
+    <p>🐜支付：<a id="paid">正在获取数据...</a></p>
+    <p>总💴：<a id="value">正在获取数据...</a></p>
+    <p>过去24小时💴：<a id="value_last_day">正在获取数据...</a></p>
+    <p>在线💻数：<a id="worker_length_online">正在获取数据...</a></p>
+    <p>数据更新时间🕓：<a id="TimeLastUpdate">正在获取数据...</a></p>
+</div>
+
+<script>
+        var balance = "{{.balance}}"
+        var paid = "{{.paid}}"
+        var value = "{{.value}}"
+        var value_last_day = "{{.value_last_day}}"
+        var worker_length_online = "{{.worker_length_online}}"
+        var value = "{{.TimeLastUpdate}}"
+        document.getElementById("balance").innerHTML=balance
+        document.getElementById("paid").innerHTML=paid
+        document.getElementById("value").innerHTML=value
+        document.getElementById("value_last_day").innerHTML=value_last_day
+        document.getElementById("worker_length_online").innerHTML=worker_length_online
+        document.getElementById("TimeLastUpdate").innerHTML=value
+</script>
+
+</body>
+</html>
